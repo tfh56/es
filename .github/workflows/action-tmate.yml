@@ -1,4 +1,4 @@
-name: Debugger Session
+name: Action Tmate
 on:
   workflow_dispatch:
 jobs:
