@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无锡一鼎华科技 - 深度学习与信息安全解决方案</title>
+    <meta name="description" content="中国无锡一鼎华科技有限公司，由创业女军人齐丽红创办，专注于深度学习与自然语言处理技术在政企、公安、国安、部队信息安全监管领域的应用">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1a365d",
+                        secondary: "#2c5282",
+                        accent: "#e53e3e"
+                    },
+                    fontFamily: {
+                        sans: ['"Microsoft YaHei"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://picsum.photos/60?random=1" alt="一鼎华科技logo" class="h-12 mr-3">
+                <h1 class="text-xl font-bold text-primary">无锡一鼎华科技有限公司</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#about" class="text-gray-700 hover:text-primary font-medium">关于我们</a></li>
+                    <li><a href="#solutions" class="text-gray-700 hover:text-primary font-medium">解决方案</a></li>
+                    <li><a href="#technology" class="text-gray-700 hover:text-primary font-medium">核心技术</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-primary font-medium">联系我们</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">深度学习驱动的信息安全监管解决方案</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">专注于自然语言处理技术在政企、公安、国安、部队信息安全领域的创新应用</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#contact" class="bg-accent hover:bg-red-600 text-white px-8 py-3 rounded-lg font-medium transition duration-300">联系我们</a>
+                <a href="#solutions" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-medium transition duration-300">解决方案</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://picsum.photos/600/400?random=2" alt="公司创始人齐丽红" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-primary mb-6">关于一鼎华科技</h2>
+                    <p class="text-lg mb-4">无锡一鼎华科技有限公司由创业女军人齐丽红创办，是一家专注于深度学习与自然语言处理技术研发的高科技企业。</p>
+                    <p class="text-lg mb-4">我们致力于将最前沿的人工智能技术应用于政企、公安、国安、部队等领域的信息安全监管，为客户提供智能化的解决方案。</p>
+                    <p class="text-lg mb-6">公司拥有一支由资深AI专家和安全领域专业人士组成的团队，在自然语言处理、大数据分析、信息安全等方面具有深厚的技术积累。</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary text-white rounded-full p-3 mr-4">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">使命</h3>
+                            <p class="text-gray-600">用AI技术守护信息安全</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">行业解决方案</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">政企信息安全</h3>
+                    <p class="text-gray-600">基于NLP的敏感信息识别与预警系统，帮助政企单位防范信息泄露风险。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">公安情报分析</h3>
+                    <p class="text-gray-600">智能文本分析系统，辅助公安部门快速提取关键信息，提升情报处理效率。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">国安信息监测</h3>
+                    <p class="text-gray-600">多语言文本深度分析平台，实现对敏感信息的实时监测与预警。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">部队信息防护</h3>
+                    <p class="text-gray-600">军事信息安全专用系统，保障部队通信与信息系统的安全稳定。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">核心技术</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary">深度自然语言处理</h3>
+                        <p class="text-gray-600">基于Transformer架构的大规模预训练模型，支持中文及多语言文本的深度语义理解。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="text-xl font-bold mb-3 text-primary">信息抽取技术</h3>
+                        <p class="text-gray-600">实体识别、关系抽取、事件检测等核心技术，从非结构化文本中提取结构化信息。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-3 text-primary">敏感信息识别</h3>
+                        <p class="text-gray-600">基于深度学习的敏感内容检测算法，准确识别各类敏感信息与违规内容。</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/600/400?random=3" alt="核心技术展示" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">联系我们</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">无锡一鼎华科技有限公司</h3>
+                        <p class="mb-4"><i class="fas fa-map-marker-alt mr-3"></i> 江苏省无锡市</p>
+                        <p class="mb-4"><i class="fas fa-phone mr-3"></i> 0510-85159175</p>
+                        <p class="mb-4"><i class="fas fa-envelope mr-3"></i> tfh56@sina.com</p>
+                    </div>
+                    <div>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="您的姓名" class="w-full px-4 py-2 rounded text-gray-800">
+                            <input type="email" placeholder="电子邮箱" class="w-full px-4 py-2 rounded text-gray-800">
+                            <input type="tel" placeholder="联系电话" class="w-full px-4 py-2 rounded text-gray-800">
+                            <textarea placeholder="留言内容" rows="4" class="w-full px-4 py-2 rounded text-gray-800"></textarea>
+                            <button type="submit" class="bg-accent hover:bg-red-600 text-white px-6 py-2 rounded font-medium transition duration-300">提交</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>© 2023 无锡一鼎华科技有限公司 版权所有</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-accent transition duration-300"><i class="fab fa-weixin text-xl"></i></a>
+                    <a href="#" class="hover:text-accent transition duration-300"><i class="fab fa-weibo text-xl"></i></a>
+                    <a href="#" class="hover:text-accent transition duration-300"><i class="fas fa-envelope text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            const nav = document.querySelector('nav.hidden');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('block');
+        });
+    </script>
+</body>
+</html>
