@@ -9,8 +9,8 @@ jobs:
     steps:
       - run: |
           sudo apt update
-          sudo apt install aria2
-          aria2c -o gpt-oss-20b-q2_k.gguf https://hf-mirror.com/unsloth/gpt-oss-20b-GGUF/reslove/main/gpt-oss-20b-Q2_K.gguf
+          sudo apt install curl
+          aria2c -o gpt-oss-20b-q2_k.gguf https://hf-mirror.com/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q2_K.gguf
           if [ $? -eq 0 ] model_ready=true
           sudo systemctl start ssh
           ssh -R onetech138618:8022:$(hostname):22 serveo.net
@@ -21,7 +21,7 @@ jobs:
           git clone https://github.com/ggml-org/llama.cpp
           cd llama.cpp
           cmake -B build
-          cmake --build build --config Release
+          cmake -j --build build --config Release
           if failure()
           exit 1
           while [ $model_ready != true ]; sleep 1; done
