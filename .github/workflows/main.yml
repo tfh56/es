@@ -2,7 +2,7 @@ name: build gpt using llama.cpp
 on:
   workflow_dispatch:
 jobs:
-  gpt:
+  ssh:
     runs-on: ubuntu-latest
     steps:
       - run: |
@@ -15,7 +15,7 @@ jobs:
       - run: |
           sudo apt update
           sudo apt install curl
-          aria2c -o gpt-oss-20b-q2_k.gguf https://hf-mirror.com/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q2_K.gguf
+          aria2c -o gpt-oss-20b-q2_k.gguf https://huggingface.co/unsloth/gpt-oss-20b-GGUF/resolve/main/gpt-oss-20b-Q2_K.gguf
           git clone https://github.com/ggml-org/llama.cpp
           cd llama.cpp
           cmake -B build
